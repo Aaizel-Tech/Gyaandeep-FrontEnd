@@ -3,9 +3,9 @@ import { useState, useEffect } from "react";
 // import { useAuth } from "./components/auth/AuthProvider";
 // import { hasPermission, PERMISSIONS } from "./components/utils/rbac";
 
-import ReportCard from "./reportCard";
-import ReportDetail from "./reportDetail";
-import ReportForm from "./reportForm";
+import ReportCard from "../Report/reportCard";
+import ReportDetail from "../Report/reportDetail";
+import ReportForm from "../Report/reportForm";
 
 // Sample data for demo purposes
 const sampleReports = [
@@ -293,7 +293,7 @@ const Reports = () => {
 
   return (
     <div className="bg-gray-100 min-h-screen pb-10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div className="flex justify-between items-center mb-6">
           <h1 className="text-2xl font-semibold text-gray-900">Reports</h1>
 
