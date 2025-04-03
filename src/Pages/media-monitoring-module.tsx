@@ -3,12 +3,12 @@ import { useState, useEffect } from "react";
 // import { useAuth } from "../components/auth/AuthProvider";
 // import { hasPermission, PERMISSIONS } from "../components/utils/rbac";
 
-import MediaTypeTabs from "./mediaTypeTabs";
-import MediaFilters from "./mediaFilters";
-import PrintMediaCard from "./printMediaCard";
-import TVMediaCard from "./tvMediaCard";
-import OnlineMediaCard from "./onlineMediaCard";
-import SocialMediaCard from "./socialMediaCard";
+import MediaTypeTabs from "../Media/mediaTypeTabs";
+import MediaFilters from "../Media/mediaFilters";
+import PrintMediaCard from "../Media/printMediaCard";
+import TVMediaCard from "../Media/tvMediaCard";
+import OnlineMediaCard from "../Media/onlineMediaCard";
+import SocialMediaCard from "../Media/socialMediaCard";
 
 // Media Type Tabs Component
 
