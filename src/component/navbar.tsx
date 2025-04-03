@@ -24,11 +24,14 @@ const Navbar: FC = () => {
   const location = useLocation();
 
   const navLinks = [
-    { path: "/homedash", label: "Home Dashboard" },
-    { path: "/reports", label: "Reports" },
+    { path: "/homedash", label: "Dashboard" },
     { path: "/media", label: "Media" },
+    { path: "/reports", label: "Reports" },
     { path: "/alerts", label: "Alerts Management" },
-    { path: "/search", label: "Advanced Search" },
+    { path: "/clipUpload", label: "Clip Upload" },
+    { path: "/workspace", label: "Workspace" },
+    { path: "/support", label: "Support" },
+    
   ];
 
   return (
