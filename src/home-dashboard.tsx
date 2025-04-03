@@ -32,7 +32,7 @@ const useAuth = () => {
 const DashboardPage = ({ children, title, subtitle, actions }) => {
   return (
     <div className="bg-gray-100 min-h-screen w-full pb-10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div className="flex justify-between items-center mb-6">
           <div>
             <h1 className="text-2xl font-semibold text-gray-900">{title}</h1>
@@ -96,7 +96,7 @@ const colors = [
 // Stat Card Component
 const StatCard = ({ title, value, change, changeType, icon: Icon }) => {
   return (
-    <div className="bg-white overflow-hidden shadow rounded-lg">
+    <div className="bg-white overflow-hidden shadow rounded-lg w-full">
       <div className="p-5">
         <div className="flex items-center">
           <div className="flex-shrink-0">
@@ -120,7 +120,7 @@ const StatCard = ({ title, value, change, changeType, icon: Icon }) => {
               />
             </div>
           </div>
-          <div className="ml-5 w-0 flex-1">
+          <div className="ml-5 w-full flex-1">
             <dl>
               <dt className="text-sm font-medium text-gray-500 truncate">
                 {title}
@@ -304,7 +304,7 @@ const HomeDashboard = () => {
       <select
         value={mediaType}
         onChange={(e) => setMediaType(e.target.value)}
-        className="block w-full pl-3 pr-10 py-1 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+        className="block w-full bg-black pl-3 pr-10 py-1 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
       >
         <option value="all">All Media</option>
         <option value="print">Print Only</option>
@@ -336,7 +336,7 @@ const HomeDashboard = () => {
       actions={dateRangeActions}
     >
       {/* Stat Cards */}
-      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4 mb-5">
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4 mb-5 w-full">
         <StatCard
           title="Print Articles"
           value="1,562"

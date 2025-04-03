@@ -4,8 +4,8 @@ import AlertsManagement from "./alerts-module";
 import ArchitectureOverview from "./architecture-overview";
 import HomeDashboard from "./home-dashboard";
 import AdvancedSearch from "./search-module";
-import Reports from "./reports-module";
-import MediaMonitoring from "./media-monitoring-module";
+import Reports from "./Report/reports-module";
+import MediaMonitoring from "./Media/media-monitoring-module";
 import Navbar from "./component/navbar";
 
 const App: FC = function () {
@@ -23,8 +23,8 @@ const App: FC = function () {
             <Route path="/arch" element={<ArchitectureOverview />} />
             <Route path="/alerts" element={<AlertsManagement />} />
             <Route path="/search" element={<AdvancedSearch />} />
-            {/* <Route path="/reports" element={<Reports />} />
-            <Route path="/media" element={<MediaMonitoring />} /> */}
+            <Route path="/reports" element={<Reports />} />
+            <Route path="/media" element={<MediaMonitoring />} />
           </Routes>
         </div>
       </div>
