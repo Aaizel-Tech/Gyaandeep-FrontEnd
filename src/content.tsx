@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { useAuth } from '../components/auth/AuthProvider';
+import { useAuth } from './components/auth/AuthProvider';
 import { hasPermission, PERMISSIONS } from '../utils/rbac';
 
 // Content Item Card Component
