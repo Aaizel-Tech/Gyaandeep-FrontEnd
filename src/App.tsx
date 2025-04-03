@@ -13,7 +13,7 @@ import Navbar from "./component/navbar";
 const App: FC = function () {
   return (
     <BrowserRouter>
-      <div className="flex h-screen overflow-hidden">
+      <div className="flex h-screen w-full overflow-hidden">
         {/* Integrated Navbar */}
         <Navbar />
 
@@ -22,7 +22,7 @@ const App: FC = function () {
           <Routes>
             <Route path="/" element={<HomeDashboard />} />
             <Route path="/homedash" element={<HomeDashboard />} />
-            <Route path="/arch" element={<ArchitectureOverview />} />
+            {/* <Route path="/arch" element={<ArchitectureOverview />} /> */}
             <Route path="/alerts" element={<AlertsManagement />} />
             <Route path="/search" element={<AdvancedSearch />} />
             <Route path="/reports" element={<Reports />} />

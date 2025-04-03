@@ -156,11 +156,11 @@ export const DashboardLayout = ({ children }) => {
   
   // Secondary navigation (bottom of sidebar)
   const secondaryNavigation = [
-    {
-      name: 'Support',
-      href: '/dashboard/support',
-      icon: SupportIcon,
-    },
+    // {
+    //   name: 'Support',
+    //   href: '/dashboard/support',
+    //   icon: SupportIcon,
+    // },
     {
       name: 'Alerts',
       href: '/dashboard/alerts',
